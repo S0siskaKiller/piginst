@@ -34,7 +34,7 @@ time.sleep(3)
 print("The installation of the custom components is complete. Move on to system configuration...") 
 os.system('sudo localectl set-x11-keymap --no-convert us,ru pc105 "" grp:alt_shift_toggle')
 os.system('sudo localectl set-locale ru_RU.UTF-8')
-os.system('echo "FONT=cyr-sun16" > /etc/vconsole.conf') 
+os.system('echo "FONT=cyr-sun16" >> /etc/vconsole.conf') 
 os.system('sudo systemctl restart vconsole')
 
 print("Installation complete")
